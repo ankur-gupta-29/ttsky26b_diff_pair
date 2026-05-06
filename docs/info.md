@@ -1,4 +1,5 @@
 # Differential Pair Amplifier
+Differential pair Amplifier
 
 ## How it works
 NMOS differential pair (M1,M2) with PMOS current mirror load (M3,M4)

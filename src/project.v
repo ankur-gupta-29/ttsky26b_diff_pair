@@ -5,7 +5,7 @@
 
 `default_nettype none
 
-module tt_um_example (
+module tt_um__diff_pair (
     input  wire       VGND,
     input  wire       VDPWR,    // 1.8v power supply
 //    input  wire       VAPWR,    // 3.3v power supply
@@ -19,5 +19,8 @@ module tt_um_example (
     input  wire       clk,      // clock
     input  wire       rst_n     // reset_n - low to reset
 );
-
+    // Tie all unused digital outputs to 0
+    assign uo_out  = 8'b0;
+    assign uio_out = 8'b0;
+    assign uio_oe  = 8'b0;
 endmodule

@@ -1,20 +1,19 @@
-<!---
-
-This file is used to generate your project datasheet. Please fill in the information below and delete any unused
-sections.
-
-You can also include images in this folder and reference them in the markdown. Each image must be less than
-512 kb in size, and the combined size of all images must be less than 1 MB.
--->
+# Differential Pair Amplifier
 
 ## How it works
+NMOS differential pair (M1,M2) with PMOS current mirror load (M3,M4)
+and NMOS tail current source (M5).
 
-Explain how your project works
+## Specifications
+| Parameter    | Pre-layout | Post-layout |
+|-------------|-----------|-------------|
+| Supply      | 1.8V      | 1.8V        |
+| Gain        | 36 dB     | 36 dB       |
+| Bandwidth   | 5 MHz     | 15-20 MHz   |
+| Tail current| 17.76 µA  | 26.79 µA    |
 
 ## How to test
-
-Explain how to use your project
-
-## External hardware
-
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+Apply 1.8V to VDPWR, GND to VGND.
+Apply Vbias=0.78V to ua[3].
+Apply differential signal to ua[1] and ua[2].
+Measure output at ua[0].
